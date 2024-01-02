@@ -395,7 +395,7 @@ body {
   .navbar-left {
     display: flex;
     /* height: 64px; */
-    padding: 10px 35px;
+    padding: 10px 1px;
     gap: 15px;
     border-radius: 16px;
   }
@@ -405,10 +405,8 @@ body {
   }
 
   .navbar-right article p {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 120%;
+    font-size: 14px;
+
   }
 
   .dashboard-container {
@@ -442,7 +440,7 @@ body {
   }
   .membersProfile-container header button {
     display: flex;
-    padding: 16px 36px;
+    padding: 16px 26px;
   }
   .section-down .section-content {
     width: 100%;
