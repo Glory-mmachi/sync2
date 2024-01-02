@@ -2,13 +2,13 @@ import search from "../assets/search-normal.svg";
 import notification from "../assets/notification.svg";
 import navImage from "../assets/navImages.svg";
 import ellipse from "../assets/Ellipse 19.svg";
-import { CiMenuBurger } from "react-icons/ci";
+import { AiOutlineMenu } from "react-icons/ai";
 import { useGlobalContext } from "../Context";
 export default function Navbar() {
   const { setShow} = useGlobalContext();
   return (
     <div className="navbar-container">
-      <CiMenuBurger
+      <AiOutlineMenu 
         className='menu'
         onClick={() => setShow(true)}
       />
