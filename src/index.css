@@ -100,6 +100,7 @@ body {
   border-right: 1px solid rgba(20, 20, 20, 0.2);
   background: #fff;
   width: auto;
+  transition: all 0.5s;
 }
 .dashboard-container header {
   padding: 36px 27px 41px;
@@ -364,6 +365,19 @@ body {
   height: 100%;
   width: 100%;
 }
+/* .home-container-mid{
+  height: 100%;
+} */
+.dashboard-home {
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 54;
+}
+.home-container-mid {
+  max-width: 1080px;
+  margin-left: auto;
+}
 
 @media screen and (max-width: 1024px) {
   .dashboard-container {
@@ -389,11 +403,8 @@ body {
     padding: 21px 11px;
   }
   .navbar-left {
-    display: flex;
-    /* height: 64px; */
     padding: 10px 0;
     gap: 5px;
-    border-radius: 16px;
   }
 
   .navbar-right {
@@ -408,10 +419,11 @@ body {
 
   .dashboard-container {
     width: 0;
-    z-index: -7;
+
   }
   .dashboard-home {
     width: 0;
+  
   }
   .active {
     display: block;
@@ -419,6 +431,9 @@ body {
     position: fixed;
     width: 210px;
     z-index: 999;
+    overflow-y: auto;
+    height: 100%;
+    overflow-x: hidden;
   }
 
   .membersProfile-container header h1 {
